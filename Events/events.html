@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events</title>
+	<script>
+		function resize () {
+			var element = document.getElementById('display');
+			element.innerHTML = element.innerHTML + " that tickles!";
+		}
+	</script>
+	<!-- <link rel="stylesheet" href="eventsStyle.css"> -->
+</head>
+<body>
+	<p id="display">
+		Whatever you do, don't resize this window! I'm warning you!
+	</p>
+	<!-- <img id="zero" src="imgEvents/zeroblur.jpg" alt="zeroblur">
+	<img id="one" src="imgEvents/oneblur.jpg" alt="oneblur">
+	<img id="two" src="imgEvents/twoblur.jpg" alt="twoblur">
+	<img id="three" src="imgEvents/threeblur.jpg" alt="threeblur">
+	<img id="four" src="imgEvents/fourblur.jpg" alt="fourblur">
+	<img id="five" src="imgEvents/fiveblur.jpg" alt="fiveblur"> -->
+	<!-- <script src="eventsScript.js"></script> -->
+<script>
+	window.onresize = resize;
+</script>
+</body>
+</html>
